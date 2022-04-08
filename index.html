@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Weatherly</title>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+</html>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div>
+        <h2>Search for a City:</h2>
+        <input class="city-searched" type="text" placeholder="ex. Dallas">
+        <button class="btn-search" type="submit">Search</button> 
+    </div>
+
+    <div class="stored-cities"></div>
+
+    <!-- Will display current city's information  -->
+    <div class="current-info">
+        <h2 id="city-name" class="current-info"></h2>
+        <h2 id="city-temp" class="current-info"></h2>
+        <h2 id="city-wind" class="current-info"></h2>
+        <h2 id="city-humidity" class="current-info"></h2>
+        <h2 id="city-uv-index" class="current-info"></h2>
+    </div>
+
+    <!-- Weather cards start here -->
+    <div class="container">
+        <div class="5-day">
+            <h2>5 Day Forecast</h2>
+
+            <div id="day1" class="weather-card">
+                <h3 id="day1" class="weather-text"></h3>
+                <div id="weather-icon1"></div>
+                <h4 id="temp1" class="weather-text"></h4>
+                <h4 id="wind1" class="weather-text"></h4>
+                <h4 id="humidity1" class="weather-text"></h4>
+            </div>
+            <div id="day2" class="weather-card">
+                <h3 id="day2" class="weather-text"></h3>
+                <div id="weather-icon2"></div>
+                <h4 id="temp2" class="weather-text"></h4>
+                <h4 id="wind2" class="weather-text"></h4>
+                <h4 id="humidity2" class="weather-text"></h4>
+            </div>
+            <div id="day3" class="weather-card">
+                <h3 id="day3" class="weather-text"></h3>
+                <div id="weather-icon3"></div>
+                <h4 id="temp3" class="weather-text"></h4>
+                <h4 id="wind3" class="weather-text"></h4>
+                <h4 id="humidity3" class="weather-text"></h4>
+            </div>
+            <div id="day4" class="weather-card">
+                <h3 id="day4" class="weather-text"></h3>
+                <div id="weather-icon4"></div>
+                <h4 id="temp4" class="weather-text"></h4>
+                <h4 id="wind4" class="weather-text"></h4>
+                <h4 id="humidity4" class="weather-text"></h4>
+            </div>
+            <div id="day5" class="weather-card">
+                <h3 id="day5" class="weather-text"></h3>
+                <div id="weather-icon5"></div>
+                <h4 id="temp5" class="weather-text"></h4>
+                <h4 id="wind5" class="weather-text"></h4>
+                <h4 id="humidity5" class="weather-text"></h4>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <script src="./assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+</body>
