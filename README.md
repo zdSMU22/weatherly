@@ -22,3 +22,7 @@ THEN I am presented with a color that indicates whether the conditions are favor
 THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 * WHEN I click on a city in the search history,
 THEN I am again presented with current and future conditions for that city
+
+![weather dashboard](https://user-images.githubusercontent.com/94766160/177594832-923e3ec6-cd6b-41c3-b4a4-e9fcdabc9b32.png)
+
+Link to deployed page: https://zdsmu22.github.io/weatherly/
