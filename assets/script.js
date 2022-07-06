@@ -299,6 +299,7 @@ function renderForecastCard(forecast, timezone) {
   var iconDescription = forecast.weather[0].description;
   var tempF = forecast.temp.day;
   var { humidity } = forecast;
+  
   var windMph = forecast.wind_speed;
 
   // Create elements for a card
@@ -310,6 +311,7 @@ function renderForecastCard(forecast, timezone) {
   var tempEl = document.createElement('p');
   var windEl = document.createElement('p');
   var humidityEl = document.createElement('p');
+  var uvforecast = document.createElement('p');
 
   col.append(card);
   card.append(cardBody);
@@ -331,6 +333,8 @@ function renderForecastCard(forecast, timezone) {
   tempEl.textContent = `Temp: ${tempF} °F`;
   windEl.textContent = `Wind: ${windMph} MPH`;
   humidityEl.textContent = `Humidity: ${humidity} %`;
+
+  
 
   forecastContainer.append(col);
 }
