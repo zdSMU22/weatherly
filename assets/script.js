@@ -1,7 +1,7 @@
 // Global variables
 var searchHistory = [];
 var weatherApiRootUrl = 'https://api.openweathermap.org';
-var weatherApiKey = '75ef5305ea3f563128fd1c68bf70ba8a';
+var weatherApiKey = '00afb8166398d2ed72521dab6fc81868';
 
     // Add timezone plugins to day.js
 dayjs.extend(window.dayjs_plugin_utc);
